@@ -27,12 +27,12 @@ export default function Footer() {
             <div className="max-w-4xl mx-auto text-center">
                 {/* Couple names — echoing the hero as bookend */}
                 <h2 className="reveal font-serif text-cream/90 text-4xl sm:text-5xl md:text-6xl font-normal mb-4">
-                    Hiro & Elena
+                    Harsha Vardhan & Sai Sri
                 </h2>
 
                 {/* Date reminder */}
                 <p className="reveal reveal-delay-1 font-body text-cream/50 text-sm tracking-[0.3em] uppercase mb-10 md:mb-14">
-                    August 24, 2026 — Tuscany
+                    March 7, 2026 — Tallarevu
                 </p>
 
                 {/* Decorative ornament */}
@@ -43,7 +43,7 @@ export default function Footer() {
                 </div>
 
                 {/* Navigation links — simple, soft */}
-                <nav className="reveal reveal-delay-2 flex flex-wrap justify-center gap-8 md:gap-12 mb-10 md:mb-14">
+                {/* <nav className="reveal reveal-delay-2 flex flex-wrap justify-center gap-8 md:gap-12 mb-10 md:mb-14">
                     {[
                         { label: "Ceremony", href: "#ceremony" },
                         { label: "Our Story", href: "#story" },
@@ -61,7 +61,7 @@ export default function Footer() {
                             {link.label}
                         </a>
                     ))}
-                </nav>
+                </nav> */}
 
                 {/* Contact details */}
                 <div className="reveal reveal-delay-3 space-y-2 mb-12 md:mb-16">
@@ -69,14 +69,14 @@ export default function Footer() {
                         For inquiries, please reach us at
                     </p>
                     <a
-                        href="mailto:hello@hiroelena.com"
+                        href="https://www.instagram.com/harsha_20599"
                         className="
               font-body text-cream/60 text-base tracking-wide
               transition-opacity duration-300
               hover:text-cream/80
             "
                     >
-                        hello@hiroelena.com
+                        @harsha_20599
                     </a>
                 </div>
 

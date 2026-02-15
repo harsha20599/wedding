@@ -53,12 +53,15 @@ export default function SaveTheDate() {
 
                     {/* Date — the star of this card */}
                     <h2 className="reveal reveal-delay-2 font-serif text-charcoal text-3xl sm:text-4xl md:text-5xl font-normal leading-tight mb-6 md:mb-8">
-                        August 24, 2026
+                        March 7, 2026
                     </h2>
 
-                    {/* Time */}
+                    {/* Day & Time */}
+                    <p className="reveal reveal-delay-3 font-body text-charcoal/80 text-lg md:text-xl tracking-wide mb-2">
+                        Saturday
+                    </p>
                     <p className="reveal reveal-delay-3 font-body text-charcoal/80 text-lg md:text-xl tracking-wide mb-6 md:mb-8">
-                        Four O&apos;Clock in the Afternoon
+                        Half Past Ten in the Evening
                     </p>
 
                     {/* Decorative divider */}
@@ -67,13 +70,13 @@ export default function SaveTheDate() {
                     {/* Venue */}
                     <div className="reveal reveal-delay-3">
                         <p className="font-serif text-charcoal text-xl md:text-2xl mb-2">
-                            Villa di Maiano
+                            Boddu Satyanarayana Function Hall
                         </p>
                         <p className="font-body text-warm-gray text-base tracking-wide">
-                            Via Benedetto da Maiano, 11
+                            Tallarevu, Korangi
                         </p>
                         <p className="font-body text-warm-gray text-base tracking-wide">
-                            Fiesole, Tuscany, Italy
+                            Andhra Pradesh 533463
                         </p>
                     </div>
 
@@ -81,7 +84,7 @@ export default function SaveTheDate() {
               The hover effect fills with olive ink, like a stamp pressing down. */}
                     <div className="reveal reveal-delay-4 mt-10 md:mt-14">
                         <a
-                            href="#contact"
+                            href="#location"
                             className="
                 group relative inline-block
                 px-10 py-3.5
@@ -100,7 +103,7 @@ export default function SaveTheDate() {
                 transition-transform duration-500 ease-out
                 group-hover:translate-y-0
               " />
-                            <span className="relative z-10">Kindly Respond</span>
+                            <span className="relative z-10">Reach</span>
                         </a>
                     </div>
                 </div>

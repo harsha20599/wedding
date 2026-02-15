@@ -28,7 +28,7 @@ export default function Hero() {
             {/* Background image — treated as atmosphere, softened with overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070"
+                    src="/cover2.jpg"
                     alt="Romantic garden setting"
                     fill
                     priority
@@ -38,7 +38,7 @@ export default function Hero() {
                 {/* Warm cream overlay — softens the image, maintains readability.
             The gradient creates depth: lighter at center (text area),
             slightly deeper at edges */}
-                <div className="absolute inset-0 bg-gradient-to-b from-cream/80 via-cream/70 to-cream/90" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/80" />
             </div>
 
             {/* Content */}
@@ -53,16 +53,16 @@ export default function Hero() {
             like they were letterpressed onto the screen. */}
                 <div className="reveal reveal-delay-1 mb-8 md:mb-12">
                     <h1 className="font-serif font-normal leading-none">
-                        <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tight text-charcoal">
-                            Hiro
+                        <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white">
+                            Harsha Vardhan
                         </span>
                         {/* Ampersand — deliberately smaller, in body serif.
                 Creates breathing room between the names. */}
                         <span className="block text-3xl sm:text-4xl md:text-5xl text-olive font-body italic my-3 md:my-5">
                             &amp;
                         </span>
-                        <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tight text-charcoal">
-                            Elena
+                        <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white">
+                            Sai Sri
                         </span>
                     </h1>
                 </div>
@@ -71,7 +71,7 @@ export default function Hero() {
             Should feel like embossed text on a card. */}
                 <div className="reveal reveal-delay-2">
                     <p className="font-body text-warm-gray text-base md:text-lg tracking-[0.25em] uppercase">
-                        August Twenty-Fourth
+                        March Seventh
                     </p>
                     <p className="font-body text-warm-gray text-base md:text-lg tracking-[0.25em] uppercase mt-1">
                         Two Thousand Twenty-Six
@@ -80,7 +80,7 @@ export default function Hero() {
 
                 {/* Location hint */}
                 <p className="reveal reveal-delay-3 font-body text-warm-gray-light text-sm tracking-[0.2em] uppercase mt-6 md:mt-10">
-                    Tuscany, Italy
+                    Tallarevu, Andhra Pradesh
                 </p>
             </div>
 

@@ -50,7 +50,7 @@ const moments: StoryMoment[] = [
         year: "2026",
         title: "Forever Begins",
         description:
-            "And now, surrounded by the people who have shaped our lives and carried our love, we choose each other — again and always — in the golden light of Tuscany.",
+            "And now, surrounded by the people who have shaped our lives and carried our love, we choose each other — again and always — beneath the warm skies of Andhra Pradesh.",
         image:
             "https://images.unsplash.com/photo-1510076857177-7470076d4098?q=80&w=1200",
         imageAlt: "Tuscan vineyard at golden hour with rolling hills",

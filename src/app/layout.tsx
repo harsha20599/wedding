@@ -24,9 +24,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Hiro & Elena — A Celebration of Love",
+  title: "Harsha Vardhan & Sai Sri — A Celebration of Love",
   description:
-    "Join us in celebrating our wedding. An intimate gathering of the people we love most.",
+    "Join us in celebrating our wedding on March 7th, 2026 at Tallarevu, Andhra Pradesh.",
 };
 
 export default function RootLayout({
