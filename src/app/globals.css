@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   DESIGN SYSTEM — Luxury Wedding Microsite
+   
+   Philosophy: Cotton-paper warmth. Editorial restraint.
+   Every value is chosen to whisper, not shout.
+   ═══════════════════════════════════════════════════════════════ */
+
+@theme inline {
+  /* — Color Palette —
+     No pure black. No stark white.
+     Everything slightly warm, slightly softened. */
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F3EDE4;
+  --color-ivory: #F5F0E8;
+  --color-olive: #4A5D3A;
+  --color-olive-light: #5A6F48;
+  --color-olive-dark: #3A4A2E;
+  --color-charcoal: #2C2C2A;
+  --color-warm-gray: #8A8680;
+  --color-warm-gray-light: #B5B0A8;
+  --color-parchment: #EDE8DF;
+
+  /* — Typography — */
+  --font-serif: var(--font-playfair);
+  --font-body: var(--font-cormorant);
+
+  /* — Spacing rhythm — editorial breathing room */
+  --spacing-section: 10rem;
+  --spacing-section-sm: 6rem;
+}
+
+/* ═══ Global Base Styles ═══ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body), Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* — Paper Texture Overlay —
+   A subtle noise grain that mimics cotton paper.
+   Applied to the entire page for tactile warmth. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* ═══ Selection ═══ */
+::selection {
+  background-color: var(--color-olive);
+  color: var(--color-cream);
+}
+
+/* ═══ Scroll-Reveal Animation Keyframes ═══ */
+
+/* Gentle fade + float upward — the signature reveal */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pure fade — for more subtle elements */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slow scale reveal — for images */
+@keyframes slowReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scroll indicator gentle bounce */
+@keyframes gentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ═══ Utility Classes for Scroll Reveal ═══ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.1, 0.25, 1),
+              transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* Image reveal — with subtle scale */
+.reveal-image {
+  opacity: 0;
+  transform: scale(1.03);
+  transition: opacity 0.9s cubic-bezier(0.25, 0.1, 0.25, 1),
+              transform 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.reveal-image.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ═══ Form Focus States ═══ */
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+/* ═══ Elegant Scrollbar ═══ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-warm-gray-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-warm-gray);
+}
