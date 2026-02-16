@@ -25,6 +25,9 @@ export default function Footer() {
             className="bg-olive-dark py-20 md:py-28 px-6"
         >
             <div className="max-w-4xl mx-auto text-center">
+                <h5 className="reveal font-serif text-cream/40 text-2xl sm:text-3xl md:text-4xl font-normal mb-12">
+                    We would love to see you there
+                </h5>
                 {/* Couple names — echoing the hero as bookend */}
                 <h2 className="reveal font-serif text-cream/90 text-4xl sm:text-5xl md:text-6xl font-normal mb-4">
                     Harsha Vardhan & Sai Sri
