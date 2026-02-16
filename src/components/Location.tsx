@@ -53,7 +53,7 @@ const transportModes: TransportMode[] = [
         id: "bus",
         label: "Bus",
         icon: "🚌",
-        description: "Bus service to the venue from nearby cities.",
+        description: "All travel buses reaches to these points",
         routes: [
             {
                 stops: [
@@ -61,11 +61,11 @@ const transportModes: TransportMode[] = [
                         name: "Yanam ⭐ Bypass Junction",
                         detail: "Yanam, Andhra Pradesh",
                         duration: "",
-                        mapUrl: "https://www.google.com/maps/place/Rajahmundry+Bus+Station/@17.0005,81.7840,17z",
+                        mapUrl: "https://maps.app.goo.gl/1roaZkMvMPS4FVMa8",
                     },
                     { ...VENUE, duration: "10 mins" },
                 ],
-                connectorLabels: ["Auto or Kakinada Bus"],
+                connectorLabels: ["'Kakinada' Bus or an Auto"],
             },
             {
                 stops: [
@@ -73,11 +73,11 @@ const transportModes: TransportMode[] = [
                         name: "Kakinada Bus Stand",
                         detail: "APSRTC main terminal",
                         duration: "Depart",
-                        mapUrl: "https://www.google.com/maps/place/Kakinada+Bus+Station/@16.9891,82.2475,17z",
+                        mapUrl: "https://maps.app.goo.gl/wVZWUiyfe2rNW9J46",
                     },
                     { ...VENUE, duration: "30 - 40 min" },
                 ],
-                connectorLabels: ["Auto Or Amalapuram Bus"],
+                connectorLabels: ["'Amalapuram' Bus or an Auto"],
             },
         ],
     },
@@ -85,8 +85,20 @@ const transportModes: TransportMode[] = [
         id: "train",
         label: "Train",
         icon: "🚆",
-        description: "Arrive by rail, then a short ride to the venue.",
+        description: "Arrive by train, then a short ride to the venue.",
         routes: [
+            {
+                stops: [
+                    {
+                        name: "Kakinada ⭐ Town Railway Station",
+                        detail: "Rama Rao Peta, Kakinada, Andhra Pradesh 533004",
+                        duration: "",
+                        mapUrl: "https://maps.app.goo.gl/Ya7BAEqbUhKWzrMb8",
+                    },
+                    { ...VENUE, duration: "45 min" },
+                ],
+                connectorLabels: ["Reach Bustop and take 'Amalapuram' Bus or an Auto"],
+            },
             {
                 stops: [
                     {
@@ -103,19 +115,7 @@ const transportModes: TransportMode[] = [
                     },
                     { ...VENUE, duration: "30 - 40 min" },
                 ],
-                connectorLabels: ["Non Stop Bus to Kakinada", "Auto Or Amalapuram Bus"],
-            },
-            {
-                stops: [
-                    {
-                        name: "Kakinada Town Railway Station",
-                        detail: "Rama Rao Peta, Kakinada, Andhra Pradesh 533004",
-                        duration: "",
-                        mapUrl: "https://www.google.com/maps/place/Kakinada+Town+Railway+Station/@16.9452,82.2338,17z",
-                    },
-                    { ...VENUE, duration: "45 min" },
-                ],
-                connectorLabels: ["Go to Bustop and take Amalapuram Bus or Auto"],
+                connectorLabels: ["Take bus to Kakinada", "Take 'Amalapuram' Bus or an Auto"],
             },
         ],
     },
@@ -123,7 +123,7 @@ const transportModes: TransportMode[] = [
         id: "flight",
         label: "Flight",
         icon: "✈️",
-        description: "Fly into Rajahmundry Airport, then a short cab ride to the venue.",
+        description: "Fly into Rajahmundry Airport, then 2 buses ride to the venue.",
         routes: [
             {
                 stops: [
@@ -131,7 +131,7 @@ const transportModes: TransportMode[] = [
                         name: "Rajahmundry Airport (RJA)",
                         detail: "Domestic terminal arrivals",
                         duration: "Arrive",
-                        mapUrl: "https://www.google.com/maps/place/Rajahmundry+Airport/@17.1114,81.8182,15z",
+                        mapUrl: "https://maps.app.goo.gl/qWcYmgvMYm7iBA9AA",
                     },
                     {
                         name: "Kakinada Bus Stop",
@@ -141,7 +141,7 @@ const transportModes: TransportMode[] = [
                     },
                     { ...VENUE, duration: "30 - 40 Mins" },
                 ],
-                connectorLabels: ["Cab or Kakinada Non-Stop Bus", "Amalapuram Bus or Auto"],
+                connectorLabels: ["Take Non-Stop Kakinada bus", "Take 'Amalapuram' Bus or an Auto"],
             },
         ],
     },

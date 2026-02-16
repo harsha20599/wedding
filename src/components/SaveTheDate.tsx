@@ -61,7 +61,7 @@ export default function SaveTheDate() {
                         Saturday
                     </p>
                     <p className="reveal reveal-delay-3 font-body text-charcoal/80 text-lg md:text-xl tracking-wide mb-6 md:mb-8">
-                        Half Past Ten in the Evening
+                        10:30 in the Night
                     </p>
 
                     {/* Decorative divider */}

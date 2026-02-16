@@ -28,7 +28,7 @@ export default function Hero() {
             {/* Background image — treated as atmosphere, softened with overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/cover2.jpg"
+                    src="/cover5.jpg"
                     alt="Romantic garden setting"
                     fill
                     priority
@@ -58,7 +58,7 @@ export default function Hero() {
                         </span>
                         {/* Ampersand — deliberately smaller, in body serif.
                 Creates breathing room between the names. */}
-                        <span className="block text-3xl sm:text-4xl md:text-5xl text-olive font-body italic my-3 md:my-5">
+                        <span className="block text-3xl sm:text-4xl md:text-5xl text-white font-body italic my-3 md:my-5">
                             &amp;
                         </span>
                         <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white">
@@ -70,11 +70,11 @@ export default function Hero() {
                 {/* Date — small caps, generous letter-spacing.
             Should feel like embossed text on a card. */}
                 <div className="reveal reveal-delay-2">
-                    <p className="font-body text-warm-gray text-base md:text-lg tracking-[0.25em] uppercase">
-                        March Seventh
+                    <p className="font-body text-[#d6d6d6] text-base md:text-lg tracking-[0.25em] uppercase font-variant-numeric ">
+                        March 7th
                     </p>
-                    <p className="font-body text-warm-gray text-base md:text-lg tracking-[0.25em] uppercase mt-1">
-                        Two Thousand Twenty-Six
+                    <p className="font-body text-[#d6d6d6] text-base md:text-lg tracking-[0.25em] uppercase mt-1">
+                        2026
                     </p>
                 </div>
 
