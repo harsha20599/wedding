@@ -24,7 +24,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Harsha Vardhan & Sai Sri — A Celebration of Love",
+  title: "Harsha & Sai Sri",
   description:
     "Join us in celebrating our wedding on March 7th, 2026 at Tallarevu, Andhra Pradesh.",
 };

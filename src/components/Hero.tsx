@@ -28,7 +28,7 @@ export default function Hero() {
             {/* Background image — treated as atmosphere, softened with overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/cover5.jpg"
+                    src="/cover.jpg"
                     alt="Romantic garden setting"
                     fill
                     priority
