@@ -152,7 +152,7 @@ const DOT_SIZE = 12;
 const HALF_DOT = DOT_SIZE / 2;
 
 /* ── Map pin link (reused per stop) ── */
-function MapLink({ url }: { url: string }) {
+function MapLink({ url, customLabel }: { url: string, customLabel?: string }) {
     return (
         <a
             href={url}
@@ -164,7 +164,7 @@ function MapLink({ url }: { url: string }) {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
             </svg>
-            View on Map
+            {customLabel || "View on Map"}
         </a>
     );
 }
@@ -283,6 +283,7 @@ export default function Location() {
                     <p className="reveal reveal-delay-3 font-body text-warm-gray text-lg mt-8 leading-relaxed">
                         Boddu Satyanarayana Function Hall — Tallarevu, AP
                     </p>
+                    <MapLink url="https://maps.app.goo.gl/EvuxbtdR9BV2neUW7" customLabel="Venue Location" />
                 </div>
 
                 {/* ── Tab bar ── */}
