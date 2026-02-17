@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   title: "Harsha & Sai Sri",
   description:
     "Join us in celebrating our wedding on March 7th, 2026 at Tallarevu, Andhra Pradesh.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 
 export default function RootLayout({

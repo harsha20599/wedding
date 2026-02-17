@@ -23,7 +23,7 @@ export default function Hero() {
     return (
         <section
             ref={sectionRef}
-            className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+            className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden"
         >
             {/* Background image — treated as atmosphere, softened with overlay */}
             <div className="absolute inset-0 z-0">
@@ -42,7 +42,7 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 text-center px-6 py-20 md:py-32">
+            <div className="relative z-10 w-full max-w-4xl text-center px-6 py-20 md:py-32">
                 {/* Pre-title — whisper-quiet context */}
                 <p className="reveal font-body text-warm-gray text-sm tracking-[0.3em] uppercase mb-8 md:mb-12">
                     Together with their families

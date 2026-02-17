@@ -19,13 +19,13 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
  */
 
 const galleryImages = [
-    { src: "/carousel/carousel (1).jpg", alt: "Harsha Vardhan & Sai Sri — moment one" },
-    { src: "/carousel/carousel (2).jpg", alt: "Harsha Vardhan & Sai Sri — moment two" },
-    { src: "/carousel/carousel (3).jpg", alt: "Harsha Vardhan & Sai Sri — moment three" },
-    { src: "/carousel/carousel (7).jpg", alt: "Harsha Vardhan & Sai Sri — moment seven" },
-    { src: "/carousel/carousel (4).jpg", alt: "Harsha Vardhan & Sai Sri — moment four" },
-    { src: "/carousel/carousel (5).jpg", alt: "Harsha Vardhan & Sai Sri — moment five" },
-    { src: "/carousel/carousel (6).jpg", alt: "Harsha Vardhan & Sai Sri — moment six" },
+    { src: "/carousel/carousel-1.jpg", alt: "Harsha Vardhan & Sai Sri — moment one" },
+    { src: "/carousel/carousel-2.jpg", alt: "Harsha Vardhan & Sai Sri — moment two" },
+    { src: "/carousel/carousel-3.jpg", alt: "Harsha Vardhan & Sai Sri — moment three" },
+    { src: "/carousel/carousel-7.jpg", alt: "Harsha Vardhan & Sai Sri — moment seven" },
+    { src: "/carousel/carousel-4.jpg", alt: "Harsha Vardhan & Sai Sri — moment four" },
+    { src: "/carousel/carousel-5.jpg", alt: "Harsha Vardhan & Sai Sri — moment five" },
+    { src: "/carousel/carousel-6.jpg", alt: "Harsha Vardhan & Sai Sri — moment six" },
 ];
 
 const AUTOPLAY_MS = 5000;
